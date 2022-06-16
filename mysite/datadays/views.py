@@ -8,5 +8,5 @@ def index(request):
         person.create()
     elif request.method == 'GET':
         persons = list(Person.objects.all())
-        return JsonResponse(persons)
+        return JsonResponse(persons, safe=False)
 
