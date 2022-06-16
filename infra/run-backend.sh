@@ -1,6 +1,7 @@
 #!/bin/bash 
 
 docker run \
+  --net datadays \
   -e DB_NAME='postgres' \
   -e DB_USER='postgres' \
   -e DB_PASSWORD='postgres' \
