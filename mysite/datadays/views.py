@@ -6,6 +6,7 @@ def index(request):
     if request.method == 'POST':
         person = Person(name=request.POST['name'], age=request.POST['age'])
         person.create()
+        return HttpResponse("Done")
     elif request.method == 'GET':
         persons = list(Person.objects.all())
         return JsonResponse(persons, safe=False)
