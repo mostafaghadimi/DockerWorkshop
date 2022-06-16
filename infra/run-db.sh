@@ -5,5 +5,5 @@ docker run \
   -e POSTGRES_USER='postgres' \
   -e POSTGRES_PASSWORD='postgres' \
   -e POSTGRES_DB='postgres' \
-  --name postgres
+  --name postgres \
   postgres:14
