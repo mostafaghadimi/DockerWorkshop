@@ -1,6 +1,5 @@
 #!/bin/bash 
 
-docker network create datadays
 docker run \
   --net datadays \
   -e POSTGRES_USER='postgres' \
