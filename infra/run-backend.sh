@@ -6,5 +6,5 @@ docker run \
   -e DB_PASSWORD='postgres' \
   -e DB_HOST='postgres' \
   -e DB_PORT='5432' \
-  datadays-backend:1.0.0 
+  datadays-back:1.0.0 
   
