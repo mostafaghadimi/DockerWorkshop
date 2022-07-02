@@ -8,6 +8,7 @@ https://docs.djangoproject.com/en/4.0/howto/deployment/wsgi/
 """
 
 # a good comment
+# another good comment
 import os
 
 from django.core.wsgi import get_wsgi_application
