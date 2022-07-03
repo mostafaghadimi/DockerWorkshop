@@ -12,10 +12,12 @@ services:
       - DB_PASSWORD=postgres
       - DB_USER=postgres
       - DB_PORT=5432
+    depends_on:
+      - postgres
   postgres:
     image: postgres:14
     volumes:
-    - postgresvol:/var/lib/postgresql/data/
+      - postgresvol:/var/lib/postgresql/data/
     environment:
       - POSTGRESQL_USER=postgres
       - POSTGRESQL_PASSWORD=postgres
